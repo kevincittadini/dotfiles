@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Kevin Cittadini
+	email = cittadini.kevin@gmail.com
+
+[alias]
+    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|main' | xargs -n 1 -r git branch -d"
+[core]
+	excludesfile = /Users/kevincittadini/.gitignore

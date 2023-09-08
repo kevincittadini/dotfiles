@@ -1,0 +1,10 @@
+- brew
+- nvim
+- zsh
+- phpstorm
+- vscode
+- bat
+- npm
+- docker
+- iTerm2
+- DisplayLinkManager
