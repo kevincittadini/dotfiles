@@ -4,6 +4,11 @@ function p {
     printf "\n\n\e[32m[[ $1 ]]\e[0m\n\n"
 }
 
+p "Adding Git Global Configs"
+cp global-gitignore ~/.gitignore
+cp global-gitconfig/ ~/.gitconfig
+git config --global core.excludesfile ~/.gitignore
+
 p "Installing Xcode Command Line Tools"
 xcode-select -p &> /dev/null
 if [ $? -ne 0 ]; then
@@ -26,7 +31,11 @@ cpdir -r local-config/nvim ~/.config/nvim
 
 p "Installing ZSH"
 brew install zsh
+
+p "Installing OH MY ZSH"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cpdir -r oh-my-zsh ~/.oh-my-zsh
+
 cp zshrc ~/.zshrc
 cp zshenv ~/.zshenv
 
@@ -51,3 +60,6 @@ brew install --cask phpstorm
 
 p "Installing Docker"
 brew install --cask docker
+
+p "Installing TypeScript"
+npm install -g typescript typescript-language-server
