@@ -5,8 +5,8 @@ function p {
 }
 
 p "Adding Git Global Configs"
-cp global-gitignore ~/.gitignore
-cp global-gitconfig/ ~/.gitconfig
+cp global_gitignore ~/.gitignore
+cp global_gitconfig ~/.gitconfig
 git config --global core.excludesfile ~/.gitignore
 
 p "Installing Xcode Command Line Tools"
