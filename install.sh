@@ -34,8 +34,6 @@ brew install zsh
 
 p "Installing OH MY ZSH"
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cpdir -r oh-my-zsh ~/.oh-my-zsh
-
 cp zshrc ~/.zshrc
 cp zshenv ~/.zshenv
 
