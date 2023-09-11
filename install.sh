@@ -37,6 +37,9 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 cp zshrc ~/.zshrc
 cp zshenv ~/.zshenv
 
+p "Installing Power10k"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 p "Installing Tig"
 brew install tig
 
