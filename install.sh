@@ -64,3 +64,6 @@ brew install --cask docker
 
 p "Installing TypeScript"
 npm install -g typescript typescript-language-server
+
+p "Installing Postman"
+brew install --cask postman
